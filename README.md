@@ -1,4 +1,7 @@
 README
+Thanks for checking out this Blog Aggregator I created for Boot.dev using Go, SQL, PostGres, Goose, and Gator!
+
+Here's some good information if you choose to run this on your system:
 
 1. Anyone who wants use this repo will need Postgres and Go installed on their system to run the program.
 
