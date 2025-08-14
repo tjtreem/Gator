@@ -113,29 +113,3 @@ func HandlerGetUsers(s *State, cmd Command) error {
 	return nil
 }
 
-
-func HandlerAgg(s *State, cmd Command) error {
-	ctx := context.Background()
-	agg, err := fetchFeed(ctx, "https://www.wagslane.dev/index.xml")
-	if err != nil {
-	    return fmt.Errorf("unable to fetch URL: %s", err)
-	}
-	
-	fmt.Printf("%s\n\n", agg.Channel.Title)
-	fmt.Printf("%s\n\n", agg.Channel.Description)
-
-	for _, item := range agg.Channel.Item {
-	    fmt.Printf("TITLE: %s\n", item.Title)
-	    fmt.Printf("LINK: %s\n", item.Link)
-	    fmt.Printf("DATE: %s\n", item.PubDate)
-	    fmt.Printf("DESCRIPTION: %s\n\n", item.Description)
-	}
-
-	return nil
-}
-
-
-
-
-
-
