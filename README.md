@@ -6,7 +6,7 @@ README
 
 "go install github.com/open-policy-agent/gatekeeper/v3/cmd/gator@master"
 
-3. You must also create and save to this file to your ROOT directory (not the project ROOT):
+3. You must also create and save this file to your ROOT directory (not the project ROOT):
 
 ".gatorconfig.json"
 
